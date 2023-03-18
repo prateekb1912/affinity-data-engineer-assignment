@@ -17,7 +17,13 @@ def get_slurs_list(slurs_file_path: str) -> list:
     slurs_list = []
     with open(slurs_file_path, 'r') as sf:
         for slur in sf.readlines():
+            
+            # Remove all whitespace around the word
             slur = slur.strip()
+
+            # Convert word to lowercase to avoid case-sensitivity-related issues
+            slur = slur.lower()
+
             slurs_list.append(slur)
 
     return slurs_list
