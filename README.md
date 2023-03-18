@@ -19,13 +19,13 @@ For this task, we divided the load to two functions - `tokenizer` and `profanity
 
 ---
 
-I have not exactly chosen a dataset but a site which contains lots of similar datasets. The s
+The most interesting datasets I have found recently are collected and recorded by [cricsheet.org](cricsheet.org). The reason I find this the most interesting of them all is purely because of my love of cricket. I have worked on these datasets for a long time just for fun and nothing else. So much so that I decided to preprocess and aggregate a few of those myself and hosted on Kaggle[https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020](here). I have worked with these datasets in various languages - Python, R and SQL for varying purposes.
 
 ## Task 3 - SQL Aptitude
 
 ---
 
-a. In the script files - `select_ncbi_id_sumatran_tiger.sql` and `select_tiger_species.sql` - we determine the count of distinct tiger species and the _ncbi_id_ of the Sumatran Tiger.
+a. In the script files (present in the sql_scripts directory) - `select_ncbi_id_sumatran_tiger.sql` and `select_tiger_species.sql` - we determine the count of distinct tiger species and the \_ncbi_id\* of the Sumatran Tiger.
 
 b. From the schema diagram, we can determine
 
@@ -39,3 +39,5 @@ Thus, the columns connecting all the tables are - **ncbi_id**, **rfam_acc**, **r
 ## Task 4 - Shell Script Aptitude
 
 ---
+
+The shell scripting task to extract MF Scheme information from the given text file is stored in `shell_scripts/extract_mfinfo.csv`. The script uses the _awk_ command to extract the values and in clean form for final usage.
